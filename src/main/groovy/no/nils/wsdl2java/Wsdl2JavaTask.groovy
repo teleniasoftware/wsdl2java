@@ -9,12 +9,12 @@ import java.security.MessageDigest
 
 @CacheableTask
 class Wsdl2JavaTask extends DefaultTask {
-    static final DESTINATION_DIR = "build/generated/wsdl"
+    static final DESTINATION_DIR = "generated/wsdl"
 
     private static final NEWLINE = System.getProperty("line.separator")
 
     @OutputDirectory
-    File generatedWsdlDir = new File(DESTINATION_DIR)
+    File generatedWsdlDir = new File(project.getBuildDir(), DESTINATION_DIR)
 
     @InputFiles
     @Classpath

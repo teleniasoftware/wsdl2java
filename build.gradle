@@ -7,8 +7,8 @@ plugins {
     id 'eclipse'
 }
 
-group = 'no.nils'
-version = '0.13-SNAPSHOT'
+group = 'com.telenia'
+version = '1.0.2'
 
 // stay compatible with the crowd
 sourceCompatibility = JavaVersion.VERSION_1_6
@@ -41,7 +41,7 @@ test {
 gradlePlugin {
     plugins {
         wsdl2java {
-            id = 'no.nils.wsdl2java'
+            id = 'com.telenia.wsdl2java'
             implementationClass = 'no.nils.wsdl2java.Wsdl2JavaPlugin'
         }
     }
